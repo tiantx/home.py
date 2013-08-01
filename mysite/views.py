@@ -2,6 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render_to_response
 from forms import Ckeditor_test_form
 
+def index(req):
+	return render_to_response('index.html')
+
 def ckeditor_test(request):
 	if 'title' in request.GET:
 		q = request.GET['body']
@@ -23,7 +26,7 @@ def ajax(request):
     return HttpResponse(json.dumps({'foo': 'bar'}), mimetype='application/json')
 
 from django.template import Context, Template
-def index(request):
+def ajax_index(request):
     """simple index page which uses jquery to make a single get request to /ajax, alerting the value of foo"""
     t = Template("""
     <!doctype html>
