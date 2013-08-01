@@ -1,0 +1,92 @@
+{% load bootstrap_toolkit %}
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Twitter Bootstrap中文版/中文翻译</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script type="text/javascript" src="/static/ckeditor/ckeditor/ckeditor.js"></script>
+	<link rel="stylesheet" type="text/css" href="/static/syntaxhighlighter/styles/shCoreDefault.css" />
+  <link rel="stylesheet" href="/static/css/bootstrap_docs.css">
+	<script language="javascript" type="text/javascript" src="/static/syntaxhighlighter/scripts/shCore.js"></script>
+	<script language="javascript" type="text/javascript" src="/static/syntaxhighlighter/scripts/shBrushCpp.js"></script>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+  <!-- Le styles -->
+    <link href="/static/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+<!-- <link href="/static/css/bootstrap-responsive.css" rel="stylesheet"> -->
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="/">Bootstrap</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="/">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+<div class = "container">
+<header class="jumbotron masthead">
+  <div class="inner">
+    <h1>Bootstrap, from Twitter</h1>
+    <p>基于HTML，CSS，JAVASCRIPT的简洁灵活的<br/>流行前端框架及交互组件集</p>
+    <p class="download-info">
+      <a href="https://github.com/twitter/bootstrap/" class="btn btn-primary btn-large">访问 GitHub 项目</a>
+      <a href="assets/bootstrap.zip" class="btn btn-large">下载 Bootstrap <small>(v2.0.2)</small></a>
+    </p>
+  </div>
+<div class="bs-links">
+    <ul class="quick-links">
+      <li><a href="./upgrading.html">从 1.4 版升级</a></li>
+      <li><a href="https://github.com/twitter/bootstrap/zipball/master">下载文档</a></li>
+      <li><a href="https://github.com/twitter/bootstrap/issues?state=open">提交问题</a></li>
+      <li><a href="https://github.com/twitter/bootstrap/wiki">路线图和更新日志</a></li>
+    </ul>
+    <ul class="quick-links">
+      <li class="follow-btn">
+        <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+      </li>
+      <li class="tweet-btn">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+    <form>
+        <table border="0" cellspacing="0">
+            {{form|as_bootstrap}}
+        </table>
+        <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+    </form>
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+ckeditor 使用了dom技术，摒弃了execCommand方法；
+syntaxhighlight 插件需要在config.js里重定义toolbar_Full才可以，再加上config.extraPlugins
+对于日期、时间、数字要在model定义里指明(blank=true, null=true)，null=true去掉了create table语句里的NOT NULL，
+	所以要更新整个数据库
+
+admin.ModelAdmin是为了修改默认的admin编辑界面
+forms.ModelForm 是作自动表单用的
+
+admin管理界面可以有的功能
+	对象搜索，定制显示，排序
+	不适用于公共的数据接口，和大数据量的排序、搜索
+	包含重要的权限功能，可以扩展
+有几个有用的工具：south迁移工具，

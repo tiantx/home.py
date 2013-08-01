@@ -1,0 +1,220 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Twitter Bootstrap中文版/中文翻译</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <link rel="stylesheet" href="/static/css/bootstrap_docs.css">
+    <link rel="stylesheet" href="/static/css/google_prettify.css">
+    <!-- link rel="stylesheet" href="/static/css/bootstrap-responsive.css"-->
+    <style type="text/css">
+      body {
+        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+      }
+    </style>
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+</head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="50">
+
+<!-- Navbar 
+=============================-->
+
+  <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle-"collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Bootstrap</a>
+        <div class="nav-collapse ">
+          <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Forms<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a class="nav" href="/form?layout=vertical">Vertical</a></li>
+                        <li><a href="/form?layout=horizontal">Horizontal</a></li>
+                        <li><a href="/form_inline?layout=inline">Inline</a></li>
+                        <li><a href="/form_inline?layout=search">Search</a></li>
+                        <li><a href="/form_template?layout=horizontal">Using template</a></li>
+                    </ul>
+            </li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="container">
+  <!-- Masthead
+      ================================================== -->
+      <header class="jumbotron subhead" id="overview">
+        <h1>框架</h1>
+        <p class="lead">
+    Bootstrap创建了响应式的12列栅格系统，并在该系统的基础上设计了固定(fixed)布局和流动宽度(fluid-width)布局。
+  </p>
+        <div class="subnav">
+          <ul class="nav nav-tabs">
+            <li><a href="#global">全局样式</a></li>
+            <li><a href="#gridSystem">栅格系统</a></li>
+            <li><a href="#fluidGridSystem">流动栅格系统</a></li>
+            <li><a href="#gridCustomization">自定义</a></li>
+            <li><a href="#layouts">布局</a></li>
+            <li><a href="#responsive">响应式设计</a></li>
+          </ul>
+        </div>
+      </header>
+
+
+<div class="row">
+
+  <div class="span4">
+    <div class="btn-group btn-primary">
+      <button class="btn">Left</button>
+      <button class="btn ">Middle</button>
+      <button class="btn">Right</button>
+    </div>
+  </div>
+
+<div class="span4 offset4">
+  <a class="btn btn-success" href="/">hello</a>
+  <a class="btn btn-danger btn-info" href="/">hello</a>
+</div>
+</div>
+</div>
+<div class="well">
+  <div class="inner">
+    <h1>主题演示BootStrap</h1>
+    <p>Hello,my bootstrap</p>
+    <p class="download-info">
+      <a href="/" class="btn btn-primary btn-large">访问</a>
+            <a href="/" class="btn btn-large">访问Github项目</a>
+      <a href="/" class="btn btn-primary btn-large">访问</a>
+
+    </p>
+  </div>
+</div>
+
+
+
+  <div class="row">
+        <div class="span4">
+            <h2>Django</h2>
+
+            <p>Django is the excellent Python web framework that makes a programmer's life less repetitive.</p>
+
+            <p><a class="btn" href="http://www.djangoproject.com">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+            <h2>Bootstrap</h2>
+
+            <p>Bootstrap is a beautiful CSS framework with an optional JavaScript add-on.</p>
+
+            <p><a class="btn" href="http://twitter.github.com/bootstrap/">View details &raquo;</a></p>
+        </div>
+        <div class="span4">
+            <h2>django-bootstrap-toolkit</h2>
+
+            <p>Is just a simple hustle to get two kinds of awesome together.</p>
+
+            <p><a class="btn" href="https://github.com/dyve/django-bootstrap-toolkit/">View details &raquo;</a></p>
+        </div>
+    </div>
+
+    <p>A big thanks to all the people that worked on Django and Bootstrap.</p>
+
+
+<!-- Masthead
+
+-->
+<header class="jumbotron masthead">
+  <div class="inner">
+    <h1>Bootstrap, from Twitter</h1>
+    <p>基于HTML，CSS，JAVASCRIPT的简洁灵活的<br/>流行前端框架及交互组件集</p>
+    <p class="download-info">
+      <a href="https://github.com/twitter/bootstrap/" class="btn btn-primary btn-large">访问 GitHub 项目</a>
+      <a href="assets/bootstrap.zip" class="btn btn-large">下载 Bootstrap <small>(v2.0.2)</small></a>
+    </p>
+  </div>
+
+  <div class="bs-links">
+    <ul class="quick-links">
+      <li><a href="./upgrading.html">从 1.4 版升级</a></li>
+      <li><a href="https://github.com/twitter/bootstrap/zipball/master">下载文档</a></li>
+      <li><a href="https://github.com/twitter/bootstrap/issues?state=open">提交问题</a></li>
+      <li><a href="https://github.com/twitter/bootstrap/wiki">路线图和更新日志</a></li>
+    </ul>
+    <ul class="quick-links">
+      <li>
+
+      </li>
+      <li>
+
+      </li>
+      <li class="follow-btn">
+        <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+      </li>
+      <li class="tweet-btn">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+
+<!-- Global Bootstrap settings
+================================================== -->
+<section id="global">
+  <div class="page-header">
+    <h1>全局样式 <small>重置CSS，排版和链接</small></h1>
+  </div>
+  <div class="row">
+    <div class="span4">
+      <h2>要求HTML5 doctype</h2>
+      <p>
+  Bootstrap用到的HTML元素和CSS属性需要HTML5 doctype。因此每个使用Bootstrap的页面都应该包启HTML5声明。
+      </p>
+<pre class="prettyprint linenums">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  ...
+&lt;/html&gt;
+</pre>
+    </div><!-- /.span -->
+    <div class="span4">
+      <h2>排版和链接</h2>
+      <p>在 <strong>scaffolding.less</strong> 文件中，设置了基本的全局显示效果，排版和链接样式。具体来说，我们:</p>
+      <ul>
+        <li>移除了body的margin</li>
+        <li>设置 <code>body</code> 背景色为 <code>background-color: white;</code> </li>
+        <li>将 <code>@baseFontFamily</code>, <code>@baseFontSize</code>, 和 <code>@baseLineHeight</code> 做为排版的基础变量</li>
+        <li>使用 <code>@linkColor</code> 设置全局链接的颜色，链接仅在 <code>:hover</code> 状下显示下划线</li>
+      </ul>
+    </div><!-- /.span -->
+    <div class="span4">
+      <h2>通过Normalize重置默认样式</h2>
+      <p>
+  从Bootstrap 2开始，使用 <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a> 对默认的CSS进行重置(reset)。
+   <a href="http://necolas.github.com/normalize.css/" target="_blank">Normalize.css</a> 项目由 <a href="http://twitter.com/necolas" target="_blank">Nicolas Gallagher</a> 创建 <a href="http://html5boilerplate.com" target="_blank">HTML5 Boilerplate</a> 项目也出于他手。
+      </p>
+      <p>
+  新的reset代码保存在 <strong>reset.less</strong> ，并移除了一些元素，从而更加简洁明了。
+      </p>
+    </div><!-- /.span -->
+  </div><!-- /.row -->
+</section>
+
+
+
+</body>
