@@ -6,7 +6,7 @@ My Home Site Powered by Python
 xiatianxiao.org
 ## django stuff
 
-main server is build by django for now
+main server is build by django , now
 
 
 
